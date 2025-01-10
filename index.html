@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Proste działania</title>
+</head>
+<body>
+    <h1>Proste działania</h1>
+    <form id="calculator-form" onsubmit="return false;">
+        <label for="pierwsza">Podaj pierwszą liczbe</label>
+        <input type="number" name="pierwsza" id="pierwsza" required>
+        <br>
+        <label for="druga">Podaj drugą liczbe</label>
+        <input type="number" name="druga" id="druga" required>
+        <br>
+        <button type="button" id="DODAWANIE">DODAWANIE</button>
+        <button type="button" id="ODEJMOWANIE">ODEJMOWANIE</button>
+        <button type="button" id="MNOZENIE">MNOZENIE</button>
+        <button type="button" id="DZIELENIE">DZIELENIE</button>
+    </form>
+
+    <div id="wynik">
+        <h2>Wynik: <span id="result">0</span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
