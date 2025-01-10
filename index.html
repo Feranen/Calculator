@@ -8,14 +8,17 @@
     <title>Proste działania</title>
 </head>
 <body>
+<div>
     <h1>Proste działania</h1>
     <form id="calculator-form" onsubmit="return false;">
-        <label for="pierwsza">Podaj pierwszą liczbe</label>
-        <input type="number" name="pierwsza" id="pierwsza" required>
-        <br>
-        <label for="druga">Podaj drugą liczbe</label>
-        <input type="number" name="druga" id="druga" required>
-        <br>
+        <div>
+            <label for="pierwsza">Podaj pierwszą liczbe</label>
+            <input type="number" name="pierwsza" id="pierwsza" required>
+        </div>
+        <div>
+            <label for="druga">Podaj drugą liczbe</label>
+            <input type="number" name="druga" id="druga" required>
+        </div>
         <button type="button" id="DODAWANIE">DODAWANIE</button>
         <button type="button" id="ODEJMOWANIE">ODEJMOWANIE</button>
         <button type="button" id="MNOZENIE">MNOZENIE</button>
@@ -23,9 +26,9 @@
     </form>
 
     <div id="wynik">
-        <h2>Wynik: <span id="result">0</span></h2>
-    </div>
-
+        <h2 id="test">Wynik: <span id="result">0</span></h2>
+    </div>    
+</div>
     <script src="script.js"></script>
 </body>
 </html>
